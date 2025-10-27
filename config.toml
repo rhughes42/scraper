@@ -1,0 +1,27 @@
+# Updated: 2025-10-27T18:46:28.160380
+[general]
+output_dir = "./output"
+checkpoint_file = "./checkpoint.json"
+headless = true
+throttle_delay_ms = 2000
+preferred_language = "EN"
+concurrent_pages = 1
+retry_attempts = 3
+timeout_seconds = 30
+
+[site]
+listing_url = "https://eur-lex.europa.eu/search.html?DTA=2024&DTS_SUBDOM=EU_CASE_LAW&DTS_DOM=EU_LAW&CASE_LAW_SUMMARY=true&type=advanced&qid=1761588435862"
+base_url = "https://eur-lex.europa.eu"
+document_content_selector = "body"
+start_print_button_text = "Ready to print"
+document_link_selector = "a[title*='html CELEX']"
+next_page_selector = "a[title='Next Page']"
+alternative_link_selectors = [ "a[href*='legal-content/EN/TXT/HTML']", "a.piwik_download[href*='HTML']",]
+alternative_next_selectors = [ "a.btn.btn-primary[title='Next Page']", "a[href*='page='][class*='btn']", "a:has-text('Next')",]
+
+[logging]
+level = "DEBUG"
+format = "[%(asctime)s] %(name)s.%(funcName)s:%(lineno)d %(levelname)s %(message)s"
+file_path = "scraper.log"
+max_file_size_mb = 10
+backup_count = 3

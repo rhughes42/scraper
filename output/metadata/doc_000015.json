@@ -1,0 +1,24 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024CJ0253_RES",
+  "language": "EN",
+  "celex_number": "62024CJ0253",
+  "title": "62024CJ0253_RES",
+  "document_type": "Communication",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": null,
+  "procedure_type": null,
+  "parties": [],
+  "subject_matter": [],
+  "keywords": [
+    "fundamental rights",
+    "preliminary ruling"
+  ],
+  "legal_basis": "Article 31 of",
+  "case_law_directory_code": null,
+  "html_length": 17042,
+  "content_quality_score": 0.7,
+  "extracted_at": "2025-10-27T18:47:40.381391",
+  "processing_method": "pdf_generation"
+}

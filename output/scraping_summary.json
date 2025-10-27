@@ -1,0 +1,21 @@
+{
+	"session_end": "2025-10-27T18:50:29.799573",
+	"metrics": {
+		"duration_seconds": 241.64,
+		"pages_processed": 6,
+		"documents_processed": 54,
+		"pdfs_generated": 0,
+		"html_fallbacks": 0,
+		"errors": 0,
+		"network_requests": 573,
+		"total_bytes_downloaded": 0,
+		"docs_per_minute": 13.41,
+		"success_rate": 100.0
+	},
+	"configuration": {
+		"listing_url": "https://eur-lex.europa.eu/search.html?DTA=2024&DTS_SUBDOM=EU_CASE_LAW&DTS_DOM=EU_LAW&CASE_LAW_SUMMARY=true&type=advanced&qid=1761588435862",
+		"preferred_language": "EN",
+		"headless_mode": true,
+		"max_documents": null
+	}
+}

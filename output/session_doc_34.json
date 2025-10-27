@@ -1,0 +1,85 @@
+{
+  "cookies": [
+    {
+      "name": "dtCookie",
+      "value": "v_4_srv_42_sn_C041A52935EE2D554D9F3EAB5B061A89_perc_100000_ol_0_mul_1_app-3A47d4c64c3b67ec69_1_rcs-3Acss_0",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ELX_SESSIONID",
+      "value": "SMAnAIw_xlqT9mcAKxFl8GkRVVZa34fw74bqfvS9LwWaLkroSfn8!793260198",
+      "domain": "eur-lex.europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "experimentalFeaturesActivated",
+      "value": "false",
+      "domain": "eur-lex.europa.eu",
+      "path": "/",
+      "expires": 1764179338.216314,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rxVisitor",
+      "value": "1761587338451MMOCFFO84OC4QSDJEP0A2CP0I4HC8D3D",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dtSa",
+      "value": "-",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rxvt",
+      "value": "1761589138499|1761587338452",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dtPC",
+      "value": "42$587338450_588h-vAWSMPVPDFPHANHUFJKFIQTKIQRCCQCIP-0e0",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AWSALB",
+      "value": "qF7VFNo1JhtQFs3ZHAn8J5OT3cc6NDXqpUuX0Gb19KvbULrlHltjebcneL/II23/AcDQ4U6BVGJcxOLM0AQEdhByLj6Jkk2STFEdmgninOAnKrejQCa4WiPUbLn+",
+      "domain": "eur-lex.europa.eu",
+      "path": "/",
+      "expires": 1762192141.3269,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

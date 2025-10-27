@@ -1,0 +1,23 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TJ0425_RES",
+  "language": "EN",
+  "celex_number": "62024TJ0425",
+  "title": "62024TJ0425_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Appeal",
+  "parties": [
+    "therefore filed a notice of appeal before the Board of Appeal of EUIPO, which dismissed the appeal on the ground that the earlier mark had a reputation as at the filing date of the mark applied for, that the two marks had a high degree of similarity and that, when the relevant public encountered the mark applied for, it would associate that mark with the earlier mark"
+  ],
+  "subject_matter": [],
+  "keywords": [],
+  "legal_basis": null,
+  "case_law_directory_code": null,
+  "html_length": 10556,
+  "content_quality_score": 0.6,
+  "extracted_at": "2025-10-27T18:47:14.201638",
+  "processing_method": "pdf_generation"
+}

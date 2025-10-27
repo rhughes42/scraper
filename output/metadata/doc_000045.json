@@ -1,0 +1,24 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TO0248_RES",
+  "language": "EN",
+  "celex_number": "62024TO0248",
+  "title": "62024TO0248_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Action for Annulment",
+  "parties": [
+    "was a Member of Parliament from 2014 to 2024",
+    "other than Belgium and was arrested, detained and prosecuted in Belgium, must be regarded as relying solely on the immunity, or inviolability, provided for in point (b) of the first paragraph of Article 9 of Protocol No 7"
+  ],
+  "subject_matter": [],
+  "keywords": [],
+  "legal_basis": "Article 263 TFEU",
+  "case_law_directory_code": null,
+  "html_length": 13647,
+  "content_quality_score": 0.6,
+  "extracted_at": "2025-10-27T18:49:56.587725",
+  "processing_method": "pdf_generation"
+}

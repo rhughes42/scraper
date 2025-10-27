@@ -1,0 +1,45 @@
+{
+  "cookies": [
+    {
+      "name": "dtCookie",
+      "value": "v_4_srv_29_sn_4CC368084AF839C0B2E4671091910039_perc_100000_ol_0_mul_1_app-3A47d4c64c3b67ec69_0",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ELX_SESSIONID",
+      "value": "0hUnADEmLc0IWFc9vs_TOBE1CE-1KZ7dY6Tdw-bCOw0so8IK4Ftn!2082541912",
+      "domain": "eur-lex.europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "experimentalFeaturesActivated",
+      "value": "false",
+      "domain": "eur-lex.europa.eu",
+      "path": "/",
+      "expires": 1764179313.712844,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AWSALB",
+      "value": "LoovBb4DX7I0FWAsF/CefoCPwUEkd7HUApqZ8ZvYDndrhBGwsjnUklluWrWM7fZqL/pBu+TENZnN8GC28ve1kYUw1cvJx7ZnzoJlKbyZrf7GT/crOnwPZntADWi4",
+      "domain": "eur-lex.europa.eu",
+      "path": "/",
+      "expires": 1762192113.85853,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

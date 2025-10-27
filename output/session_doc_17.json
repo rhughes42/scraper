@@ -1,0 +1,85 @@
+{
+  "cookies": [
+    {
+      "name": "dtCookie",
+      "value": "v_4_srv_34_sn_74B1F23FB03A54CE5493BD80C5919FA4_perc_100000_ol_0_mul_1_app-3A47d4c64c3b67ec69_1_rcs-3Acss_0",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ELX_SESSIONID",
+      "value": "4zIm_3QOPrfe9HtIYaCl7-LVhOYWhJ65Aw5MlX--9Cft_GgvXZKy!1254889352",
+      "domain": "eur-lex.europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "experimentalFeaturesActivated",
+      "value": "false",
+      "domain": "eur-lex.europa.eu",
+      "path": "/",
+      "expires": 1764179266.333985,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rxVisitor",
+      "value": "17615872664682C0LR8UCPEQTP3A4AMUGNDMEGD2SMR27",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dtSa",
+      "value": "-",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "rxvt",
+      "value": "1761589066519|1761587266469",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dtPC",
+      "value": "34$587266467_521h-vTLTCEFQBLECMAJHLVWPEFCCWWTMEQMCV-0e0",
+      "domain": ".europa.eu",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AWSALB",
+      "value": "kVg2ythCSl71rKvtxCcaG4iNemwjdC+08LHK10pCJJR4RgDhHREU2nvcn1JaOzPYPxOaDy+DeDVg6jJ4J/Cgq3LfASjdjVKRiOsLp9f7Awhhr0KDJta+KygHKGRQ",
+      "domain": "eur-lex.europa.eu",
+      "path": "/",
+      "expires": 1762192069.431916,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

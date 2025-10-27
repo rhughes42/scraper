@@ -1,0 +1,23 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TJ0113_RES",
+  "language": "EN",
+  "celex_number": "62024TJ0113",
+  "title": "62024TJ0113_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Action for Annulment",
+  "parties": [],
+  "subject_matter": [],
+  "keywords": [
+    "proportionality"
+  ],
+  "legal_basis": "Article 91 of",
+  "case_law_directory_code": null,
+  "html_length": 20651,
+  "content_quality_score": 0.7,
+  "extracted_at": "2025-10-27T18:48:48.810347",
+  "processing_method": "pdf_generation"
+}

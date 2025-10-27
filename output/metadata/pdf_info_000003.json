@@ -1,0 +1,10 @@
+{
+  "idx": 3,
+  "doc_id": "3",
+  "filename": "eurlex-doc-3.pdf",
+  "file_path": "output\\pdfs\\eurlex-doc-3.pdf",
+  "file_size": 130691,
+  "file_hash": "12d474b0f625a6a66942f88926d9d5e63910fc1c48755fa0253489dc5d7a6d16",
+  "processing_method": "pdf_generation",
+  "saved_at": "2025-10-27T18:46:44.502491"
+}

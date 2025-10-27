@@ -1,0 +1,25 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TO0509(01)_RES",
+  "language": "EN",
+  "celex_number": "62024TO0509",
+  "title": "62024TO0509(01)_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Preliminary Ruling",
+  "parties": [
+    "directly on the basis of EU law, (ii) concerning the interpretation or validity of provisions of EU law, including Regulation 2017/1939, and (iii) concerning the interpretation of Articles 22 and 25 of that regulation in relation to any conflict of competence between the EPPO and the competent national authorities"
+  ],
+  "subject_matter": [],
+  "keywords": [
+    "preliminary ruling"
+  ],
+  "legal_basis": "Article 263 TFEU",
+  "case_law_directory_code": null,
+  "html_length": 13671,
+  "content_quality_score": 0.7,
+  "extracted_at": "2025-10-27T18:49:32.035563",
+  "processing_method": "pdf_generation"
+}

@@ -1,0 +1,26 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TJ0368_RES",
+  "language": "EN",
+  "celex_number": "62024TJ0368",
+  "title": "62024TJ0368_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Infringement Procedure",
+  "parties": [
+    "was involved in the drafting of a resolution on the situation of human rights in the context of the football World Cup in Qatar in 2022"
+  ],
+  "subject_matter": [],
+  "keywords": [
+    "fundamental rights",
+    "proportionality"
+  ],
+  "legal_basis": "Article 3 of",
+  "case_law_directory_code": null,
+  "html_length": 11474,
+  "content_quality_score": 0.6,
+  "extracted_at": "2025-10-27T18:49:35.396244",
+  "processing_method": "pdf_generation"
+}

@@ -1,0 +1,24 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TO0179_RES",
+  "language": "EN",
+  "celex_number": "62024TO0179",
+  "title": "62024TO0179_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Action for Annulment",
+  "parties": [
+    "is not directly concerned, the Court rules for the first time on whether formal opinions issued by the European Commission, addressed to a national authority on the basis of Article 17(4) of Regulation No 1094/2010 (\n1\n) and setting out the necessary action to comply with EU law, may be challenged before the EU Courts",
+    "to withdraw the authorisation of an insurance or reinsurance undertaking"
+  ],
+  "subject_matter": [],
+  "keywords": [],
+  "legal_basis": "Article 17 and",
+  "case_law_directory_code": null,
+  "html_length": 17078,
+  "content_quality_score": 0.7,
+  "extracted_at": "2025-10-27T18:49:43.314320",
+  "processing_method": "pdf_generation"
+}

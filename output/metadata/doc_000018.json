@@ -1,0 +1,24 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TJ0092_RES",
+  "language": "EN",
+  "celex_number": "62024TJ0092",
+  "title": "62024TJ0092_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Appeal",
+  "parties": [
+    "brought three appeals against those decisions before the Board of Appeal of EUIPO, which dismissed them, finding that the Cancellation Division was justified in declaring the contested designs invalid under Article 25(1)(e) of Regulation No 6/2002, read in conjunction with Article 36(2)(b) of the Romanian Law on trade marks, since there was a likelihood of confusion",
+    "governing that sign confers on the right holder of the sign the right to prohibit such use"
+  ],
+  "subject_matter": [],
+  "keywords": [],
+  "legal_basis": null,
+  "case_law_directory_code": null,
+  "html_length": 15728,
+  "content_quality_score": 0.7,
+  "extracted_at": "2025-10-27T18:47:54.210483",
+  "processing_method": "pdf_generation"
+}

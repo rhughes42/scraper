@@ -1,0 +1,27 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TJ0188_RES",
+  "language": "EN",
+  "celex_number": "62024TJ0188",
+  "title": "62024TJ0188_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Action for Annulment",
+  "parties": [
+    "to gain a better understanding of what it is alleged to have done"
+  ],
+  "subject_matter": [],
+  "keywords": [
+    "fundamental rights",
+    "internal market",
+    "proportionality"
+  ],
+  "legal_basis": "Article 296 TFEU",
+  "case_law_directory_code": null,
+  "html_length": 22168,
+  "content_quality_score": 0.6,
+  "extracted_at": "2025-10-27T18:48:56.636977",
+  "processing_method": "pdf_generation"
+}

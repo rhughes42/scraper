@@ -1,0 +1,23 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TJ0032_RES",
+  "language": "EN",
+  "celex_number": "62024TJ0032",
+  "title": "62024TJ0032_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Appeal",
+  "parties": [
+    "(Art"
+  ],
+  "subject_matter": [],
+  "keywords": [],
+  "legal_basis": "Article 67 of",
+  "case_law_directory_code": null,
+  "html_length": 12265,
+  "content_quality_score": 0.7,
+  "extracted_at": "2025-10-27T18:46:57.045081",
+  "processing_method": "pdf_generation"
+}

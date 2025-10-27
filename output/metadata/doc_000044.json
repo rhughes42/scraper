@@ -1,0 +1,27 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TO0319_RES",
+  "language": "EN",
+  "celex_number": "62024TO0319",
+  "title": "62024TO0319_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Action for Annulment",
+  "parties": [
+    "or another State party to the Agreement on the European Economic Area (EEA)"
+  ],
+  "subject_matter": [],
+  "keywords": [
+    "fundamental rights",
+    "free movement",
+    "proportionality"
+  ],
+  "legal_basis": "Article 263 TFEU",
+  "case_law_directory_code": null,
+  "html_length": 18107,
+  "content_quality_score": 0.7,
+  "extracted_at": "2025-10-27T18:49:46.616917",
+  "processing_method": "pdf_generation"
+}

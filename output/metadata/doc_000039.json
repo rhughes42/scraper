@@ -1,0 +1,23 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TO0615_RES",
+  "language": "EN",
+  "celex_number": "62024TO0615",
+  "title": "62024TO0615_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": "Action for Annulment",
+  "parties": [
+    "submitted a complaint against the European Commission to the Ombudsman"
+  ],
+  "subject_matter": [],
+  "keywords": [],
+  "legal_basis": "Article 263 TFEU",
+  "case_law_directory_code": null,
+  "html_length": 12115,
+  "content_quality_score": 0.6,
+  "extracted_at": "2025-10-27T18:49:28.673161",
+  "processing_method": "pdf_generation"
+}

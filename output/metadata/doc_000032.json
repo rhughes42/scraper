@@ -1,0 +1,25 @@
+{
+  "doc_id": null,
+  "url": "https://eur-lex.europa.eu/./legal-content/EN/TXT/HTML/?uri=CELEX:62024TJ0180_RES",
+  "language": "EN",
+  "celex_number": "62024TJ0180",
+  "title": "62024TJ0180_RES",
+  "document_type": "Case Law",
+  "date_of_document": null,
+  "date_of_publication": null,
+  "court_formation": "General Court",
+  "procedure_type": null,
+  "parties": [
+    "his salary statement for July 2023, according to which the rate of tax applied to his remuneration in respect of that month is the same as that applied when he does not take parental leave"
+  ],
+  "subject_matter": [],
+  "keywords": [
+    "fundamental rights"
+  ],
+  "legal_basis": "Article 7 of",
+  "case_law_directory_code": null,
+  "html_length": 9226,
+  "content_quality_score": 0.6,
+  "extracted_at": "2025-10-27T18:48:52.201969",
+  "processing_method": "pdf_generation"
+}
