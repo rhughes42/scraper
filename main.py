@@ -22,6 +22,7 @@ Version: 2.0.0
 
 import asyncio
 import argparse
+import json
 import sys
 from pathlib import Path
 from typing import List, Optional
@@ -29,12 +30,33 @@ from typing import List, Optional
 # Add local modules to path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from config.settings import get_settings, ConfigManager
+_CONFIG_IMPORT_ERROR = None
+try:
+    from config.settings import get_settings, ConfigManager
+except ModuleNotFoundError as exc:
+    if exc.name == "toml":
+        ConfigManager = None  # type: ignore[assign]
+        get_settings = None  # type: ignore[assign]
+        _CONFIG_IMPORT_ERROR = exc
+    else:
+        raise
+
+_BROWSER_IMPORT_ERROR = None
+try:
+    from browser.manager import create_browser_manager, RetryablePageManager
+except ModuleNotFoundError as exc:
+    if exc.name == "playwright":
+        create_browser_manager = None  # type: ignore[assignment]
+        RetryablePageManager = None  # type: ignore[assignment]
+        _BROWSER_IMPORT_ERROR = exc
+    else:
+        raise
+
 from utils.logging import setup_logger
-from browser.manager import create_browser_manager, RetryablePageManager
 from parsers.curia_parser import create_parser as create_curia_parser
 from parsers.eurlex_parser import create_eurlex_parser
 from storage.manager import create_storage_manager
+from simple_sitemap import generate_sitemap, SitemapGenerationError
 
 
 class CuriaScraperEngine:
@@ -42,6 +64,11 @@ class CuriaScraperEngine:
 
     def __init__(self, config_path: str = "config.toml"):
         # Load configuration
+        if ConfigManager is None:
+            raise RuntimeError(
+                "Configuration system unavailable: install the 'toml' package "
+                "to run standard scraping modes."
+            )
         self.config_manager = ConfigManager(config_path)
         self.settings = self.config_manager.load_config()
 
@@ -634,6 +661,7 @@ Examples:
   python main.py --headless                # Force headless mode
   python main.py --config custom.toml     # Use custom config file
   python main.py --resume                 # Resume from checkpoint
+  python main.py --sitemap-url https://example.com  # Generate sitemap JSON
         """,
     )
 
@@ -660,7 +688,48 @@ Examples:
         "--verbose", "-v", action="store_true", help="Enable verbose logging"
     )
 
+    parser.add_argument(
+        "--sitemap-url",
+        help="Generate a JSON sitemap for the given URL and exit (simple mode)",
+    )
+
+    parser.add_argument(
+        "--sitemap-max-pages",
+        type=int,
+        default=None,
+        help="Optional limit on pages to crawl when using --sitemap-url",
+    )
+
     args = parser.parse_args()
+
+    if args.sitemap_url:
+        try:
+            sitemap = generate_sitemap(
+                args.sitemap_url, max_pages=args.sitemap_max_pages
+            )
+        except SitemapGenerationError as exc:
+            print(f"\n?? Sitemap generation failed: {exc}")
+            sys.exit(1)
+        except Exception as exc:
+            print(f"\n?? Unexpected error during sitemap generation: {exc}")
+            sys.exit(1)
+        else:
+            print(json.dumps(sitemap, indent=2))
+            return
+
+    if _CONFIG_IMPORT_ERROR is not None:
+        print(
+            "\n?? The 'toml' package is required for standard scraping modes.\n"
+            "   Install it with 'pip install toml' or run `pip install -r requirements.txt`."
+        )
+        sys.exit(1)
+
+    if _BROWSER_IMPORT_ERROR is not None:
+        print(
+            "\n?? Playwright is required for standard scraping modes.\n"
+            "   Install it with 'pip install playwright' and run 'playwright install'."
+        )
+        sys.exit(1)
 
     # Create and run scraper
     try:
