@@ -348,7 +348,9 @@ For more information, visit: https://github.com/rhughes42/scraper
             # Display as JSON
             print(f"\n📄 Default Configuration for '{app_name}':")
             print("=" * 60)
-            print(json.dumps(config.dict(), indent=2))
+            # Use model_dump for Pydantic v2 compatibility
+            config_dict = config.model_dump() if hasattr(config, 'model_dump') else config.dict()
+            print(json.dumps(config_dict, indent=2))
             print("=" * 60 + "\n")
             
             return 0
