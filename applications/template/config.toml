@@ -1,0 +1,107 @@
+# Template Scraper Configuration
+# ==============================
+
+# INSTRUCTIONS:
+# 1. Copy this file as a starting point for your custom scraper
+# 2. Update all URLs, selectors, and settings for your target site
+# 3. Test with small max_documents values first
+# 4. Adjust throttle_delay_ms to respect the target server
+
+# ============================================================================
+# GENERAL SETTINGS
+# ============================================================================
+
+# Output directory for scraped documents and metadata
+output_dir = "./output"
+
+# File to store checkpointing/resume information
+checkpoint_file = "./checkpoint.json"
+
+# Run browser in headless mode (no visible window)
+headless = true
+
+# Delay between requests in milliseconds (be respectful to servers!)
+throttle_delay_ms = 2000
+
+# Number of pages to process concurrently (1 = sequential, safer)
+concurrent_pages = 1
+
+# Number of times to retry failed requests
+retry_attempts = 3
+
+# Page load timeout in seconds
+timeout_seconds = 30
+
+# Maximum number of documents to scrape (null = unlimited)
+# Start with a small number for testing!
+max_documents = 10
+
+# ============================================================================
+# SITE-SPECIFIC SETTINGS
+# ============================================================================
+
+# Base URL of the target website (used for resolving relative links)
+base_url = "https://example.com"
+
+# Starting URL for document discovery (search page, listing page, etc.)
+start_url = "https://example.com/documents"
+
+# Preferred language for documents (if applicable)
+preferred_language = "EN"
+
+# Preferred format for documents (if applicable)
+preferred_format = "HTML"
+
+# Optional: API key for authenticated access
+# api_key = "your-api-key-here"
+
+# ============================================================================
+# CSS SELECTORS
+# Update these to match your target site's HTML structure
+# ============================================================================
+
+# Primary selector for document links
+document_link_selector = "a.document-link"
+
+# Primary selector for next page button
+next_page_selector = "a.next-page"
+
+# Alternative selectors (fallbacks if primary fails)
+alternative_link_selectors = [
+    "a[href*='/doc/']",
+    "a.doc-link",
+    "div.document-item a"
+]
+
+alternative_next_selectors = [
+    "a[title*='Next']",
+    "button.next",
+    "a:has-text('Next')"
+]
+
+# Selector for main document content
+document_content_selector = "div.content"
+
+# Selectors for metadata extraction
+title_selector = "h1.title"
+author_selector = "span.author"
+date_selector = "span.date"
+
+# ============================================================================
+# NOTES
+# ============================================================================
+
+# Tips for finding selectors:
+# 1. Open the target page in Chrome/Firefox
+# 2. Right-click an element and select "Inspect"
+# 3. In DevTools, right-click the HTML element
+# 4. Select "Copy" > "Copy selector"
+# 5. Paste the selector into this config
+#
+# You can test selectors in the browser console:
+#    document.querySelector("your-selector-here")
+#
+# Good selectors are:
+# - Specific enough to find the right elements
+# - Stable (won't break with minor page changes)
+# - Simple (avoid overly complex selectors)

@@ -139,11 +139,11 @@ class ConfigManager:
 
         settings = Settings()
 
-        # Convert to dict for TOML serialization
+        # Convert to dict for TOML serialization (Pydantic v2 compatible)
         config_dict = {
-            "general": settings.general.dict(),
-            "site": settings.site.dict(),
-            "logging": settings.logging.dict()
+            "general": settings.general.model_dump() if hasattr(settings.general, 'model_dump') else settings.general.dict(),
+            "site": settings.site.model_dump() if hasattr(settings.site, 'model_dump') else settings.site.dict(),
+            "logging": settings.logging.model_dump() if hasattr(settings.logging, 'model_dump') else settings.logging.dict()
         }
 
         # Write to file
@@ -191,10 +191,11 @@ class ConfigManager:
         """Update config file with any new fields from defaults"""
         try:
             current_config = toml.load(self.config_path)
+            # Pydantic v2 compatible
             new_config = {
-                "general": settings.general.dict(),
-                "site": settings.site.dict(),
-                "logging": settings.logging.dict()
+                "general": settings.general.model_dump() if hasattr(settings.general, 'model_dump') else settings.general.dict(),
+                "site": settings.site.model_dump() if hasattr(settings.site, 'model_dump') else settings.site.dict(),
+                "logging": settings.logging.model_dump() if hasattr(settings.logging, 'model_dump') else settings.logging.dict()
             }
 
             # Check if update is needed
