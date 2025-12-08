@@ -1,0 +1,25 @@
+# CURIA Scraper Configuration
+# ===========================
+
+# General Settings
+output_dir = "./output"
+checkpoint_file = "./checkpoint.json"
+headless = true
+throttle_delay_ms = 2000
+concurrent_pages = 1
+retry_attempts = 3
+timeout_seconds = 30
+max_documents = 100
+
+# Site-Specific Settings
+base_url = "https://curia.europa.eu"
+start_url = "https://curia.europa.eu/juris/recherche.jsf?language=en"
+preferred_language = "EN"
+
+# CSS Selectors
+document_link_selector = "div#docHtml a[href*='document.jsf']"
+next_page_selector = "a[title='Next Page']"
+alternative_link_selectors = ["a[href*='document.jsf']", "a[href*='docid=']"]
+alternative_next_selectors = ["a[title*='Next']", "a:has-text('Next')", "a:has-text('»')"]
+document_content_selector = "body"
+start_print_button_text = "Start Printing"
