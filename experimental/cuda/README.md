@@ -74,8 +74,9 @@ Collects environment details and CUDA availability hints (via optional imports a
 
 ### `exp010_simhash_numpy_vs_cupy.py`
 Computes a simple projection-based SimHash-like fingerprint over synthetic features:
-- CPU baseline: NumPy
-- GPU candidate: CuPy (if installed and a CUDA device is present)
+- Baseline: pure Python (always available)
+- CPU vector baseline: NumPy (optional)
+- GPU candidate: CuPy (optional; requires CUDA + compatible wheel)
 
 ### `exp020_embeddings_sentence_transformers.py`
 Measures embedding throughput using `sentence-transformers`:

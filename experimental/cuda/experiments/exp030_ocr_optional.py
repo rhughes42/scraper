@@ -27,8 +27,10 @@ def run(_: argparse.Namespace) -> ExperimentResult:
     }
 
     notes: List[str] = [
-        "OCR acceleration is highly backend-dependent (GPU support typically requires GPU-specific wheels).",
-        "If this project adds OCR for scanned PDFs, GPU OCR is a prime candidate for large speedups.",
+        "OCR acceleration is backend-dependent (GPU support typically needs "
+        "GPU-specific wheels).",
+        "If this project adds OCR for scanned PDFs, GPU OCR is a prime "
+        "candidate for large speedups.",
     ]
 
     finished = time.time()
@@ -40,4 +42,3 @@ def run(_: argparse.Namespace) -> ExperimentResult:
         metrics=checks,
         notes=notes,
     )
-

@@ -1,32 +1,33 @@
 from __future__ import annotations
 
 import argparse
+import importlib
 import time
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
 from experimental.cuda.run_experiments import ExperimentResult
 
 
 def _optional_sentence_transformers():
     try:
-        from sentence_transformers import SentenceTransformer  # type: ignore
-
-        return SentenceTransformer
+        st = importlib.import_module("sentence_transformers")
+        return getattr(st, "SentenceTransformer", None)
     except Exception:
         return None
 
 
 def _optional_torch():
     try:
-        import torch  # type: ignore
-
-        return torch
+        return importlib.import_module("torch")
     except Exception:
         return None
 
 
 def _make_texts(n: int, approx_chars: int) -> List[str]:
-    base = "Regulation (EU) 2016/679 on the protection of natural persons with regard to the processing of personal data."
+    base = (
+        "Regulation (EU) 2016/679 on the protection of natural persons with "
+        "regard to the processing of personal data."
+    )
     if approx_chars <= len(base):
         chunk = base[:approx_chars]
     else:
@@ -60,8 +61,9 @@ def run(_: argparse.Namespace) -> ExperimentResult:
             finished_at=finished,
             metrics={"reason": "sentence-transformers not installed"},
             notes=[
-                "Install `sentence-transformers` (and `torch`) to enable this benchmark.",
-                "On GPU machines, install a CUDA-capable PyTorch build for meaningful results.",
+                "Install `sentence-transformers` (and `torch`) to enable "
+                "this benchmark.",
+                "On GPU machines, install a CUDA-capable PyTorch build.",
             ],
         )
 
@@ -86,8 +88,10 @@ def run(_: argparse.Namespace) -> ExperimentResult:
     }
 
     notes: List[str] = [
-        "This is a proxy for embedding-based dedup/routing/extraction steps that are compute-heavy and batchable.",
-        "End-to-end impact depends on how much time is currently spent in parsing vs network/browser.",
+        "Proxy for embedding-based dedup/routing/extraction steps that are "
+        "compute-heavy.",
+        "End-to-end impact depends on time spent in parsing vs "
+        "network/browser.",
     ]
 
     if cuda_available:
@@ -97,7 +101,9 @@ def run(_: argparse.Namespace) -> ExperimentResult:
                 "gpu_seconds": gpu_s,
                 "gpu_texts_per_sec": len(texts) / max(gpu_s, 1e-9),
                 "speedup": cpu_s / max(gpu_s, 1e-9),
-                "gpu_name0": str(torch.cuda.get_device_name(0)) if torch else None,
+                "gpu_name0": (
+                    str(torch.cuda.get_device_name(0)) if torch else None
+                ),
             }
         )
     else:
@@ -112,4 +118,3 @@ def run(_: argparse.Namespace) -> ExperimentResult:
         metrics=metrics,
         notes=notes,
     )
-

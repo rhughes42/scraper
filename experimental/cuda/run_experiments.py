@@ -11,10 +11,9 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Callable, Dict, Iterable, List, Optional
 
-
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 if str(_REPO_ROOT) not in sys.path:
-    # Allow running this file directly: `python experimental/cuda/run_experiments.py`
+    # Allow running directly: `python experimental/cuda/run_experiments.py`
     sys.path.insert(0, str(_REPO_ROOT))
 
 
@@ -37,7 +36,9 @@ def _default_output_dir() -> Path:
     return base / "scraper_cuda_experiments"
 
 
-def _load_experiment(module_path: str) -> Callable[[argparse.Namespace], ExperimentResult]:
+def _load_experiment(
+    module_path: str,
+) -> Callable[[argparse.Namespace], ExperimentResult]:
     module = importlib.import_module(module_path)
     runner = getattr(module, "run", None)
     if not callable(runner):
@@ -48,7 +49,10 @@ def _load_experiment(module_path: str) -> Callable[[argparse.Namespace], Experim
 EXPERIMENTS: Dict[str, str] = {
     "exp001": "experimental.cuda.experiments.exp001_system_info",
     "exp010": "experimental.cuda.experiments.exp010_simhash_numpy_vs_cupy",
-    "exp020": "experimental.cuda.experiments.exp020_embeddings_sentence_transformers",
+    "exp020": (
+        "experimental.cuda.experiments."
+        "exp020_embeddings_sentence_transformers"
+    ),
     "exp030": "experimental.cuda.experiments.exp030_ocr_optional",
 }
 
@@ -77,12 +81,17 @@ def _write_results(output_dir: Path, results: List[ExperimentResult]) -> Path:
         ],
     }
     out_path = output_dir / "results.json"
-    out_path.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
+    out_path.write_text(
+        json.dumps(payload, indent=2, sort_keys=True),
+        encoding="utf-8",
+    )
     return out_path
 
 
 def main(argv: Optional[List[str]] = None) -> int:
-    parser = argparse.ArgumentParser(description="Run experimental CUDA/NVIDIA benchmarks")
+    parser = argparse.ArgumentParser(
+        description="Run experimental CUDA/NVIDIA benchmarks"
+    )
     parser.add_argument(
         "--list",
         action="store_true",
@@ -92,13 +101,19 @@ def main(argv: Optional[List[str]] = None) -> int:
         "--only",
         action="append",
         default=[],
-        help="Run only a specific experiment id (repeatable), e.g. --only exp010",
+        help=(
+            "Run only a specific experiment id (repeatable), "
+            "e.g. --only exp010"
+        ),
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
         default=_default_output_dir(),
-        help="Directory for JSON results (default: /tmp/scraper_cuda_experiments)",
+        help=(
+            "Directory for JSON results "
+            "(default: /tmp/scraper_cuda_experiments)"
+        ),
     )
     args = parser.parse_args(argv)
 
@@ -118,7 +133,9 @@ def main(argv: Optional[List[str]] = None) -> int:
             result = run_fn(args)
         except SystemExit:
             raise
-        except Exception as exc:  # noqa: BLE001 - experiments should never crash the runner
+        except (
+            Exception
+        ) as exc:  # noqa: BLE001 - experiments should never crash the runner
             finished = time.time()
             result = ExperimentResult(
                 experiment_id=exp_id,
