@@ -1,0 +1,19 @@
+# Optional dependencies for experimental CUDA/NVIDIA benchmarks.
+# Install only what you need; these are intentionally not part of the main scraper requirements.
+#
+# NOTE: GPU wheels are platform/CUDA-version specific. You may need to adjust these.
+
+# CuPy (GPU vector/matrix math). Choose the CUDA version that matches your driver/runtime.
+# cupy-cuda12x
+
+# PyTorch CUDA (for embedding / model inference experiments).
+# torch
+# sentence-transformers
+
+# Optional: ONNX Runtime with CUDA execution provider (for future TensorRT/ONNX experiments).
+# onnxruntime-gpu
+
+# OCR stacks (GPU support depends on the backend build).
+# paddleocr
+# paddlepaddle-gpu
+
