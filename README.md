@@ -60,6 +60,10 @@ scraper/
 │       ├── config.toml         # Example settings
 │       └── parser.py           # Example parser
 │
+├── use_cases/                  # Domain-level organization and planning
+│   ├── law/                    # Existing legal/case-law use case
+│   └── financial/              # Financial data source use case
+│
 ├── cli/                        # Command-line interface
 │   └── main.py                 # CLI application entry point
 │
@@ -726,6 +730,7 @@ We welcome contributions! Here's how you can help:
 
 - **[Developer Guide](DEVELOPER_GUIDE.md)**: Comprehensive guide for creating new applications
 - **[Template Application](applications/template/)**: Fully documented template with examples
+- **[Use Cases](use_cases/)**: Domain groupings for legal and financial scraping goals
 - **[Next Steps](NEXT_STEPS.md)**: Roadmap and future enhancements
 
 ## 📞 Support
@@ -743,5 +748,6 @@ For issues and questions:
 **Version**: 3.0.0  
 **Framework**: Generalized Web Scraper  
 **Applications**: CURIA, EUR-Lex  
+**Use Cases**: Law, Financial  
 **Author**: Ryan Hughes <ryan@graphtechnologies.xyz>  
 **Updated**: December 2024
