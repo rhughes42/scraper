@@ -6,7 +6,7 @@ This use case identifies useful financial sources that can be added as scraper a
 
 1. **SEC EDGAR**
    - Website: https://www.sec.gov/edgar/searchedgar/companysearch.html
-   - Value: Company filings (10-K, 10-Q, 8-K, etc.) for financial case analysis
+   - Value: Company filings (10-K, 10-Q, 8-K, etc.) for financial cases analysis
 
 2. **Federal Reserve Economic Data (FRED)**
    - Website: https://fred.stlouisfed.org/
